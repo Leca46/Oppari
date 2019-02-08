@@ -23,6 +23,29 @@
   <!-- Custom styles for this template -->
   <link href="css/agency.css" rel="stylesheet">
 
+  <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#000"
+        },
+        "button": {
+          "background": "transparent",
+          "text": "#f1d600",
+          "border": "#f1d600"
+        }
+      },
+      "position": "bottom-right",
+      "type": "opt-out",
+      "content": {
+        "message": "Tämä sivusto käyttää evästeitä varmistaakseen parhaimman kokemuksen sivustolla.",
+        "dismiss": "Hyväksy Evästeet",
+        "deny": "Kiellä Evästeet",
+        "link": "Lue lisää"
+      }
+    })});
+    </script>
 </head>
 
 <body id="page-top">
