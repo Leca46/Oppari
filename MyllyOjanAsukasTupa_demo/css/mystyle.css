@@ -1,0 +1,307 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main-text {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+.main {
+  font-family: 'Shrikhand', cursive;
+  text-align: center;
+  font-size: 44px;
+  color: white;
+}
+
+.para {
+  text-align: center;
+  font-size: 26px;
+  color: white;
+}
+.about {
+  text-align: center;
+}
+.last-container {
+  text-align: center;
+  display: column;
+  justify-content: flex-start;
+}
+.info {
+  padding: 5px;
+}
+.rent {
+  text-align: center;
+  display: column;
+  justify-content: space-around;
+}
+
+
+.nav-footer {
+  list-style: none;
+  text-decoration: none;
+
+}
+.foot-a {
+  font-weight: 900;
+  text-decoration: none;
+  padding: .5em;
+  text-transform: uppercase;
+  color: lightblue;
+  font-size: .9rem;
+}
+.well-payment {
+  background-color: yellow;
+  width: 80%;
+  margin: auto;
+  border: 3px solid #73AD21;
+}
+.well-list {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+.well-topic {
+  background-color: yellow;
+  width: 50%;
+  margin: auto;
+  border: 3px solid #73AD21;
+}
+.row {
+    display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+.bottom-info {
+
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+ .column {
+   width: 100%;
+ }
+}
+
+.event-style a {
+  color: blue!important;
+
+}
+.event-style {
+  display: row;
+  text-align: center;
+  padding: 20px;
+}
+
+.normal-list {
+  list-style: none;
+
+}
+/* buttons */
+
+
+
+@media (min-width: 60rem) {
+	.button {
+		font-size: 1.5rem;
+	}
+}
+
+.button-small {
+	font-size: .7rem;
+	font-weight: 700;
+}
+
+.button-accent {
+	color: white;
+	border-color: white;
+}
+.button-accent-second {
+  background-color: #0066ff;
+	color: white;
+	border-color: blue;
+}
+.button-accent-second:hover,
+.button-accent-second:focus {
+	background: lightblue;
+	color: #232323;
+}
+.button-accent:hover,
+.button-accent:focus {
+	background: white;
+	color: #232323;
+}
+
+.button-dark {
+	color: #232323;
+	border-color: #232323;
+}
+
+.button-dark:hover,
+.button-dark:focus {
+	background: #232323;
+	color: #00ff6c;
+}
+/* Modal start */
+.modal-open {
+  overflow: hidden;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  outline: 0;
+}
+
+.modal.fade .modal-dialog {
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  -webkit-transform: translate(0, -25%);
+          transform: translate(0, -25%);
+}
+
+.modal.show .modal-dialog {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+
+.modal-content {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000;
+}
+
+.modal-backdrop.fade {
+  opacity: 0;
+}
+
+.modal-backdrop.show {
+  opacity: 0.5;
+}
+
+.modal-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.modal-title {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.modal-body {
+  position: relative;
+  -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+  padding: 15px;
+}
+
+.modal-footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  padding: 15px;
+  border-top: 1px solid #e9ecef;
+}
+
+.modal-footer > :not(:first-child) {
+  margin-left: .25rem;
+}
+
+.modal-footer > :not(:last-child) {
+  margin-right: .25rem;
+}
+
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 500px;
+    margin: 30px auto;
+  }
+  .modal-sm {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  .modal-lg {
+    max-width: 800px;
+  }
+}
+/*table responsive*/
+@media (max-width: 991px) {
+  .table-responsive {
+    display: flex;
+    width: 90%;
+
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  .table-responsive.table-bordered {
+    border: 0;
+
+  }
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}

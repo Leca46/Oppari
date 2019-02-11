@@ -22,30 +22,32 @@
 
   <!-- Custom styles for this template -->
   <link href="css/agency.css" rel="stylesheet">
-
+  <!-- Cookies styles -->
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
   <script>
-    window.addEventListener("load", function(){
-    window.cookieconsent.initialise({
-      "palette": {
-        "popup": {
-          "background": "#000"
-        },
-        "button": {
-          "background": "transparent",
-          "text": "#f1d600",
-          "border": "#f1d600"
-        }
+  window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#000"
       },
-      "position": "bottom-right",
-      "type": "opt-out",
-      "content": {
-        "message": "Tämä sivusto käyttää evästeitä varmistaakseen parhaimman kokemuksen sivustolla.",
-        "dismiss": "Hyväksy Evästeet",
-        "deny": "Kiellä Evästeet",
-        "link": "Lue lisää"
+      "button": {
+        "background": "transparent",
+        "text": "#f1d600",
+        "border": "#f1d600"
       }
-    })});
-    </script>
+    },
+    "position": "bottom-right",
+    "type": "opt-out",
+    "content": {
+      "message": "Tämä sivusto käyttää evästeitä varmistaakseen parhaimman kokemuksen sivustolla.",
+      "dismiss": "Hyväksy Evästeet",
+      "deny": "Kiellä Evästeet",
+      "link": "Lue lisää"
+    }
+  })});
+  </script>
 </head>
 
 <body id="page-top">
@@ -53,7 +55,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="index.html">Myllyojan asukastupa</a>
+      <a class="navbar-brand js-scroll-trigger" href="index.html">Myllyojan Asukastupa</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
@@ -62,17 +64,18 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Ajankohtaista</a>
+            <a class="nav-link js-scroll-trigger" href="index.html#events">Ajankohtaista</a>
           </li>
           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Palvelut <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="siivous.html">Siivous Palvelut</a></li>
-              <li><a href="">Talonmies Palvelut</a></li>
-              <li><a href="#">ATK-Palvelut</a></li>
+              <li><a href="talkkari.html">Talonmies Palvelut</a></li>
+              <li><a href="atk.html">ATK-Palvelut</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Tilan Varaukset <span class="caret"></span></a>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Varattavat tilat<span class="caret"></span></a>
             <ul class="dropdown-menu">
+              <li><a href="varauskalenteri.html">Varauskalenteri</a></li>
               <li><a href="tupa.html">Tupa</a></li>
               <li><a href="sauna.html">Sauna</a></li>
               <li><a href="kota.html">Kota</a></li>
@@ -275,60 +278,89 @@
       </div>
     </section> -->
 
-  <!-- Footer -->
-  <footer style="background-color: black;">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <span class="copyright">Copyright &copy; Your Website 2018</span>
-        </div>
-        <div class="col-md-4">
-          <ul class="list-inline social-buttons">
-            <li class="list-inline-item">
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <ul class="list-inline quicklinks">
-            <li class="list-inline-item">
-              <a href="#">Privacy Policy</a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">Terms of Use</a>
-            </li>
-          </ul>
+    <!-- Footer -->
+    <footer style="background-color: black;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">Copyright &copy; Your Website 2018</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+              <li class="nav-item">
+  						  <a class="divider" data-toggle="modal" data-target="#loginform" href="#">
+  						  ADMIN
+  						  </a>
+  					  </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Contact form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/agency.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/myscript.js"></script>
+  </body>
 
-</body>
-
-</html>
+  </html>
+  <!--Modal form for login-->
+  <div id="loginform" class="modal fade" role="dialog">
+  	<div class="modal-dialog">
+  		<div class="modal-content">
+  			<div class="modal-header">
+  				<button type="button" class="close" data-dismiss="modal">&times;</button>
+  			</div>
+  			<div class="modal-body">
+  			 <h5 class="modal-title">Kirjaudu hallintapaneeliin</h5>
+  			 <form class="form-signin" id="formsignin">
+  			 Sähköposti: <input class="form-control" id="email" type="email" required />
+  			 Salasana: <input class="form-control" id="password" type="password" required /><br>
+  			 <input class="btn btn-lg btn-primary btn-block" type="submit" id="submitbtn" value="Kirjaudu" />
+         <br>
+  			 </form>
+  			</div>
+  			<div id="logininfo"></div>
+  			<div class="modal-footer">
+  				<button type="button" class="close" data-dismiss="modal">Sulje</button>
+  			</div>
+  		</div>
+  	</div>
+  </div>

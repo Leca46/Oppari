@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Agency - Start Bootstrap Theme</title>
+  <title>Myllyojan Asukastupa</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -22,6 +22,8 @@
 
   <!-- Custom styles for this template -->
   <link href="css/agency.css" rel="stylesheet">
+  <link href="css/mystyle.css" rel="stylesheet">
+    <link href="css/sigin.css" rel="stylesheet">
   <!-- Cookies styles -->
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
   <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
@@ -55,7 +57,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="index.html">Myllyojan asukastupa</a>
+      <a class="navbar-brand js-scroll-trigger" href="index.html">Myllyojan Asukastupa</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
@@ -64,7 +66,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Ajankohtaista</a>
+            <a class="nav-link js-scroll-trigger" href="#events">Ajankohtaista</a>
           </li>
           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Palvelut <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -73,8 +75,9 @@
               <li><a href="atk.html">ATK-Palvelut</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Tilan Varaukset <span class="caret"></span></a>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Varattavat tilat<span class="caret"></span></a>
             <ul class="dropdown-menu">
+              <li><a href="varauskalenteri.html">Varauskalenteri</a></li>
               <li><a href="tupa.html">Tupa</a></li>
               <li><a href="sauna.html">Sauna</a></li>
               <li><a href="kota.html">Kota</a></li>
@@ -84,7 +87,7 @@
             <a class="nav-link js-scroll-trigger" href="yhteystiedot.html">Yhteystiedot</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="https://drive.google.com/drive/folders/1QkIJkdZhEW5jL0HE8FAUENk9D1VXgHlM">Kuvagalleria</a>
+            <a class="nav-link js-scroll-trigger" href="galleria.html">Kuvagalleria</a>
           </li>
         </ul>
       </div>
@@ -95,30 +98,63 @@
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
-        <div class="intro-lead-in">Welcome To Our Studio!</div>
-        <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
+        <div class="intro-lead-in">Tervetuloa!</div>
+        <div class="intro-heading text-uppercase">Myllyojan Asukastuvalle</div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="varauskalenteri.html">Varauskalenteri</a>
       </div>
     </div>
   </header>
 
-  <section>
-    <div class="container">
-      Ajankohtaista
-    </div>
-  </section>
+  <section id="events">
+    <center>
 
-  <section>
-    <div class="container">
-      LähiDemokratia
-    </div>
+    <br>
+      <div class="row">
+        <div class="column">
+          <h3>Ajankohtaista</h3>
+          <div class="well-payment event-style">
+            <div class="table-responsive ">
+              <br>
+              <table class="table">
+                 <tbody class="event-style" id="results2">
+                 </tbody>
+              </table>
+              <br>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <h3>Asukastuvan tiedote</h3>
+          <div class="well-payment event-style">
+          <div class="table-responsive ">
+          <table class="table ">
+             <tbody class="event-style" id="results4">
+             </tbody>
+          </table>
+          </div>
+          </div>
+        <br>
+          <h3>Lähidemokratia tiedottaa</h3>
+          <div class="well-payment event-style">
+          <div class="table-responsive ">
+              <div class="table-responsive">
+                <table class="table ">
+                   <tbody class="event-style" id="results3">
+                   </tbody>
+                </table>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </center>
   </section>
-
   <!-- Services -->
   <section id="services">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Services</h2>
+          <h2 class="section-heading text-uppercase">Palvelumme</h2>
           <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
         </div>
       </div>
@@ -153,10 +189,6 @@
       </div>
     </div>
   </section>
-
-
-
-
   <!-- Team -->
   <section class="bg-light" id="team">
     <div class="container">
@@ -248,8 +280,6 @@
       </div>
     </div>
   </section>
-
-  <!-- Clients
     <section class="py-5">
       <div class="container">
         <div class="row">
@@ -276,7 +306,6 @@
         </div>
       </div>
     </section> -->
-
   <!-- Footer -->
   <footer style="background-color: black;">
     <div class="container">
@@ -311,12 +340,16 @@
             <li class="list-inline-item">
               <a href="#">Terms of Use</a>
             </li>
+            <li class="nav-item">
+						  <a class="divider" data-toggle="modal" data-target="#loginform" href="#">
+						  ADMIN
+						  </a>
+					  </li>
           </ul>
         </div>
       </div>
     </div>
   </footer>
-
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -330,7 +363,32 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/myscript.js"></script>
 
+
+<!--Modal form for login-->
+<div id="loginform" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+			<div class="modal-body">
+			 <h5 class="modal-title">Kirjaudu hallintapaneeliin</h5>
+			 <form class="form-signin" id="formsignin">
+			 Sähköposti: <input class="form-control" id="email" type="email" required />
+			 Salasana: <input class="form-control" id="password" type="password" required /><br>
+			 <input class="btn btn-lg btn-primary btn-block" type="submit" id="submitbtn" value="Kirjaudu" />
+       <br>
+			 </form>
+			</div>
+			<div id="logininfo"></div>
+			<div class="modal-footer">
+				<button type="button" class="close" data-dismiss="modal">Sulje</button>
+			</div>
+		</div>
+	</div>
+</div>
 </body>
-
 </html>
