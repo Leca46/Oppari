@@ -1,7 +1,5 @@
 header.masthead {
     text-align: center;
-    font-size: 45px;
-    width: 100%;
     color: white;
     background-image: url("../img/WP_20180612_10_57_25_Pro.jpg");
     background-repeat: no-repeat;
@@ -9,3 +7,4 @@ header.masthead {
     background-position: center center;
     background-size: cover;
   }
+  

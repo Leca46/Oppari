@@ -8,10 +8,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Agency - Start Bootstrap Theme</title>
+    <title>Asukastuvan yhteystiedot</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -22,6 +23,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/agency.css" rel="stylesheet">
+    <link href="css/myscript.css" rel="stylesheet">
     <!-- Cookies styles -->
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
@@ -56,7 +58,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="index.html">Myllyojan Asukastupa</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
         </button>
@@ -65,25 +68,22 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="index.html#events">Ajankohtaista</a>
             </li>
-            <div class="dropdown">
-              <a class="dropdown-toggle" style="color: white"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Palvelut
-              </a>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="tilanVaraus.html">Tilan Varaus</a>
-                <a class="dropdown-item" href="siivous.html">Siivous palvelu</a>
-              </div>
-            </div>
-            <div class="dropdown">
-              <a class="dropdown-toggle" style="color: white"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Varattavat Tilat
-              </a>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="sauna.html">Sauna</a>
-                <a class="dropdown-item" href="tupa.html">Tupa</a>
-                <a class="dropdown-item" href="kota.html">Kota</a>
-              </div>
-            </div>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Palvelut <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="siivous.html">Kotiapulainen</a></li>
+                <li><a href="talkkari.html">Kylätalkkari</a></li>
+                <li><a href="ompelu.html">Ompelija</a></li>
+                <li><a href="atk.html">ATK-Palvelut</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Varattavat tilat<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="varauskalenteri.html">Varauskalenteri</a></li>
+                <li><a href="tupa.html">Tupa</a></li>
+                <li><a href="sauna.html">Sauna</a></li>
+                <li><a href="kota.html">Kota</a></li>
+              </ul>
+            </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="yhteystiedot.html">Yhteystiedot</a>
             </li>
@@ -94,65 +94,12 @@
         </div>
       </div>
     </nav>
-
-    <!-- Header -->
-    <header class="masthead">
-      <div class="container">
-        <div class="intro-text">
-          <div class="intro-lead-in">Welcome To Our Studio!</div>
-          <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
-        </div>
-      </div>
-    </header>
-
-    <!-- Services -->
-    <section id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Services</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">E-Commerce</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Responsive Design</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Web Security</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-
-    <!-- Team -->
+      <!-- Team -->
     <section class="bg-light" id="team">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+            <h2 class="section-heading text-uppercase">Tupalaiset</h2>
             <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
           </div>
         </div>
@@ -161,7 +108,7 @@
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
               <h4>Kay Garland</h4>
-              <p class="text-muted">Lead Designer</p>
+              <p class="text-muted">Toiminnanjohtaja</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="#">
@@ -185,7 +132,7 @@
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
               <h4>Larry Parker</h4>
-              <p class="text-muted">Lead Marketer</p>
+              <p class="text-muted">Tupaisäntä</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="#">
@@ -209,7 +156,7 @@
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
               <h4>Diana Pertersen</h4>
-              <p class="text-muted">Lead Developer</p>
+              <p class="text-muted">Työnjohtaja</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="#">
@@ -237,35 +184,25 @@
         </div>
       </div>
     </section>
+    <section>
 
-    <!-- Clients
-    <section class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
-            </a>
-          </div>
+      <!--Main layout-->
+        <div class="container">
+          <center>
+            <h2>Yhteystietomme</h2>
+            <p>Löydät meidät alla olevasta osoitteesta!</p>
+
+        <div class="embed-responsive embed-responsive-16by9">
+          <center>
+            <h2>Yhteystietomme</h2>
+            <p>Löydät meidät alla olevasta osoitteesta!</p>
+          <!--Google map-->
+          <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1684.8010276326588!2d25.521406616336897!3d65.0216908492599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4681d2ae66332059%3A0xdd91663f2bdbbd4d!2sMyllyojan+asukastupa!5e0!3m2!1sfi!2sfi!4v1550057239275" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </center>
         </div>
-      </div>
-    </section> -->
-
+        </div>
+      <!--Main layout-->
+    </section>
     <!-- Footer -->
     <footer style="background-color: black;">
       <div class="container">

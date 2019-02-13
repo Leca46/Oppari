@@ -22,8 +22,8 @@
 
   <!-- Custom styles for this template -->
   <link href="css/agency.css" rel="stylesheet">
+  <link href="css/sigin.css" rel="stylesheet">
   <link href="css/mystyle.css" rel="stylesheet">
-    <link href="css/sigin.css" rel="stylesheet">
   <!-- Cookies styles -->
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
   <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
@@ -51,7 +51,6 @@
   })});
   </script>
 </head>
-
 <body id="page-top">
 
   <!-- Navigation -->
@@ -70,8 +69,9 @@
           </li>
           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Palvelut <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="siivous.html">Siivous Palvelut</a></li>
-              <li><a href="talkkari.html">Talonmies Palvelut</a></li>
+              <li><a href="siivous.html">Kotiapulainen</a></li>
+              <li><a href="talkkari.html">Kylätalkkari</a></li>
+              <li><a href="ompelu.html">Ompelija</a></li>
               <li><a href="atk.html">ATK-Palvelut</a></li>
             </ul>
           </li>
@@ -98,59 +98,56 @@
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
-        <div class="intro-lead-in">Tervetuloa!</div>
-        <div class="intro-heading text-uppercase">Myllyojan Asukastuvalle</div>
+        <div class="intro-lead-in">Asukastuvan Kotisivut</div>
+        <div class="intro-heading"></div>
         <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="varauskalenteri.html">Varauskalenteri</a>
       </div>
     </div>
   </header>
-
-  <section id="events">
+  <section class="bg-light" id="events">
     <center>
-
     <br>
       <div class="row">
         <div class="column">
           <h3>Ajankohtaista</h3>
           <div class="well-payment event-style">
-            <div class="table-responsive ">
+
               <br>
               <table class="table">
-                 <tbody class="event-style" id="results2">
+                 <tbody id="results2">
                  </tbody>
               </table>
               <br>
-            </div>
+
           </div>
         </div>
         <div class="column">
-          <h3>Asukastuvan tiedote</h3>
+          <h3>Tiedotelehti</h3>
           <div class="well-payment event-style">
-          <div class="table-responsive ">
+
           <table class="table ">
-             <tbody class="event-style" id="results4">
+             <tbody id="results4">
              </tbody>
           </table>
-          </div>
+
           </div>
         <br>
-          <h3>Lähidemokratia tiedottaa</h3>
+          <h3>Lähidemokratia</h3>
           <div class="well-payment event-style">
-          <div class="table-responsive ">
-              <div class="table-responsive">
+
+
                 <table class="table ">
-                   <tbody class="event-style" id="results3">
+                   <tbody id="results3">
                    </tbody>
                 </table>
-            </div>
-          </div>
+
         </div>
         </div>
       </div>
     </center>
   </section>
   <!-- Services -->
-  <section id="services">
+  <section class="bg" id="services">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -162,9 +159,18 @@
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+            <i class="fas fas fa-female fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">E-Commerce</h4>
+          <h4 class="service-heading">Kotiapulainen</h4>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
+            quo inventore harum ex magni, dicta impedit.</p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fas fa-cogs fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">Kylätalkkari</h4>
           <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
             quo inventore harum ex magni, dicta impedit.</p>
         </div>
@@ -173,16 +179,7 @@
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">Responsive Design</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
-            quo inventore harum ex magni, dicta impedit.</p>
-        </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Web Security</h4>
+          <h4 class="service-heading">ATK-tuki</h4>
           <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
             quo inventore harum ex magni, dicta impedit.</p>
         </div>
@@ -194,7 +191,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+          <h2 class="section-heading text-uppercase">Tupalaisia</h2>
           <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
         </div>
       </div>
@@ -203,7 +200,7 @@
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
             <h4>Kay Garland</h4>
-            <p class="text-muted">Lead Designer</p>
+            <p class="text-muted">Toiminnanjohtaja</p>
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
                 <a href="#">
@@ -227,7 +224,7 @@
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
             <h4>Larry Parker</h4>
-            <p class="text-muted">Lead Marketer</p>
+            <p class="text-muted">Tupaisäntä</p>
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
                 <a href="#">
@@ -251,7 +248,7 @@
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
             <h4>Diana Pertersen</h4>
-            <p class="text-muted">Lead Developer</p>
+            <p class="text-muted">Työnjohtaja</p>
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
                 <a href="#">
@@ -280,32 +277,32 @@
       </div>
     </div>
   </section>
-    <section class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
-            </a>
-          </div>
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <a href="#">
+            <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#">
+            <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#">
+            <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#">
+            <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
+          </a>
         </div>
       </div>
-    </section> -->
+    </div>
+  </section>
   <!-- Footer -->
   <footer style="background-color: black;">
     <div class="container">
@@ -365,8 +362,8 @@
   <script src="js/agency.min.js"></script>
   <script src="js/login.js"></script>
   <script src="js/myscript.js"></script>
-
-
+</body>
+</html>
 <!--Modal form for login-->
 <div id="loginform" class="modal fade" role="dialog">
 	<div class="modal-dialog">
@@ -390,5 +387,3 @@
 		</div>
 	</div>
 </div>
-</body>
-</html>
